@@ -1,0 +1,7 @@
+<template name="optinForm">
+    {{#autoForm id="of" schema=schema type="method" meteormethod="dvc:mailgun/subscribe"}}
+        {{> afQuickField name="name" class="form-control"}}
+        {{> afQuickField name="email" class="form-control"}}
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Sign Up Now</button>
+    {{/autoForm}}
+</template>

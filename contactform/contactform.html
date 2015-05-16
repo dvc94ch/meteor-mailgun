@@ -1,0 +1,10 @@
+<template name="contactForm">
+    {{#autoForm id="cf" schema=schema type="method" meteormethod="dvc:mailgun/contact"}}
+        {{> afQuickField name="name" class="form-control"}}
+        {{> afQuickField name="email" class="form-control"}}
+        {{> afQuickField name="message" rows=5 class="form-control"}}
+        <button type="submit" class="btn btn-primary btn-lg btn-block">
+            Send message
+        </button>
+    {{/autoForm}}
+</template>
